@@ -26,10 +26,12 @@
     --purple: #4a0354;
     scroll-behavior: smooth;
 }
-
+section,nav,footer{
+    margin: auto;
+}
 body{
-    justify-content:center;
     width:100%;
+    align-items: center;
     height: auto;
     background:linear-gradient(-325deg,var(--backgroundcolor),var(--backgroundcolor),rgb(45, 2, 52),
     var(--backgroundcolor),rgb(134, 2, 155)),var(--backgroundcolor);
@@ -603,12 +605,17 @@ textarea {
         height:100%;
         opacity:0.04;
     }
-    logo2 img{
-        width:100px;
-        height:200px;
-    }
     #messenger{
         width:50%;
+    }
+    section{
+        min-height:600px;
+        max-height:700px;
+        max-width:1500px;
+    }
+    nav{
+        max-height:100px;
+        max-width: 1500px;
     }
 }
 @media only screen and (min-width:900px){

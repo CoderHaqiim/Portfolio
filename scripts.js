@@ -18,8 +18,6 @@ const techUsed = document.querySelector("#tech-used")
 const imgContainer = document.querySelectorAll(".img-container")
 let count = 0
 
-
-console.log(innerWidth)
 aboutBtn.onclick = () =>{
     shadow.style.display = "flex"
 }
@@ -92,6 +90,9 @@ const changeNavColor = () =>{
     nav.style.backgroundColor = "var(--foot-color)"
     resumeBtn.style.color = "var(--foot-color)"
 }
+
+
+
 const navBorderChange = () =>{
     projectsBtn.style.borderBottom = "3px solid var(--action)"
     homeBtn.style.borderBottom = "none"
@@ -100,6 +101,10 @@ const normalNav = () =>{
     homeBtn.style.borderBottom = "3px solid var(--action)"
     projectsBtn.style.borderBottom = "none"
 }
+
+
+
+
 const navTransparent = () =>{
     nav.style.backgroundColor = "transparent"
     resumeBtn.style.color = "var(--purple)"
@@ -108,7 +113,7 @@ onscroll = () =>{
     let y = scrollY
     let x = scrollX
     y >= 80? changeNavColor(): navTransparent()
-    y >= 680? navBorderChange() : normalNav()
+    y >= 500? navBorderChange() : normalNav()
 }
 onload = () =>{
     homeBtn.classList.add("clicked-nav")
