@@ -36,6 +36,7 @@ body{
     background:linear-gradient(-325deg,var(--backgroundcolor),var(--backgroundcolor),rgb(45, 2, 52),
     var(--backgroundcolor),rgb(134, 2, 155)),var(--backgroundcolor);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     width:4px;
@@ -308,6 +309,15 @@ h1{
     align-items: center;
     justify-content: center;
 }
+#name2{
+    display: none;
+    position:absolute;
+    color:rgba(255, 255, 255, 0.484);
+    top:10px;
+    left:10px;
+    font-weight:900;
+    font-size:0.7rem;
+}
 #thumbnail {
     width: 100px;
     height: 100px;
@@ -334,7 +344,7 @@ h1{
     width: auto;
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-weight:600;
     font-size: .8rem;
     padding-left: 10px;
 }
@@ -364,8 +374,7 @@ h1{
     display:flex;
     flex-direction:column;
     padding:12px;
-    align-items:center;
-    font-size:0.8rem;
+    font-size:0.7rem;
     display:none;
     position:absolute;
     justify-content: center;
@@ -511,6 +520,14 @@ textarea {
     #hamburger{
         display:none;
     }
+    #demos{
+        width:100%;
+        justify-content:space-between;
+        padding:0 10px;
+    }
+    #card-name{
+        display: none;
+    }
     #nav-container{
         width:80%;
         height:100%;
@@ -551,7 +568,9 @@ textarea {
         grid-template-columns:repeat(2,1fr);
         grid-template-rows:repeat(2,1fr);
         gap:40px;
-        padding:10vh 0vh;
+    }
+    #name2{
+        display:block;
     }
     .clicked-nav{
         border-bottom:none;
@@ -564,6 +583,27 @@ textarea {
         border-bottom:3px solid var(--action);
     }
 
+}
+@media only screen and (min-width:720px){
+    #demos {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 10px 0px 0px;
+        flex: 1;
+        width:auto;
+    }
+    #name2{
+        display:none;
+    }
+    #card-name {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        font-weight:600;
+        font-size: .8rem;
+        padding-left: 10px;
+    }
 }
 @media only screen and (min-width: 768px){
     #social-media{
@@ -616,6 +656,11 @@ textarea {
     nav{
         max-height:100px;
         max-width: 1500px;
+    }
+    footer{
+        max-width:1500px;
+        max-height:700px;
+        min-height: ;
     }
 }
 @media only screen and (min-width:900px){
