@@ -18,15 +18,15 @@ const techUsed = document.querySelector("#tech-used")
 const imgContainer = document.querySelectorAll(".img-container")
 let count = 0
 
-aboutBtn.onclick = () =>{
-    shadow.style.display = "flex"
-}
-abt.onclick = () =>{
-    shadow.style.display = "flex"
-}
-exit.onclick = () =>{
-    shadow.style.display = "none"
-}
+// aboutBtn.onclick = () =>{
+//     shadow.style.display = "flex"
+// }
+// abt.onclick = () =>{
+//     shadow.style.display = "flex"
+// }
+// exit.onclick = () =>{
+//     shadow.style.display = "none"
+// }
 
 const createItemsForId1 = (container) =>{
     const techsUsed = ['javascript','css','html']
