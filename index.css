@@ -71,6 +71,8 @@ img{
     font-size:1rem;
     position: relative;
     box-shadow:0px 2px 4px -2px black;
+    transition:.5s;
+    cursor:pointer;
 }
 .btn:after{
     content: " ";
@@ -81,11 +83,11 @@ img{
     position: absolute;
     height:100%;
     border-radius:5px;
-    background-color:#040c274f;
+    background-color:#040c273e;
+    transition:.5s;
 }
 .btn:hover::after{
     width:100%;
-    transition:.5s;
 }
 .container{
     width:90%;
@@ -100,8 +102,9 @@ nav .container{
     position: fixed;
     height:100vh;
     width: 100%;
-    z-index:3;
+    z-index:2000;;
     display:none;
+    top:0px;
     align-items: center;
     justify-content: center;
 }
@@ -116,26 +119,59 @@ nav .container{
     color: #ffffffd9;
 }
 #about-page{
-    width:90%;
-    height:75%;
+    width:95%;
+    height:90vh;
     background-color: white;
-    border-radius:5px;
+    border-radius:15px;
     box-shadow:0px 0px 5px 1px;
     display: flex;
-    position: relative;
+    flex-direction: column;
+    position: absolute;
+    overflow-y: scroll;
+    padding:15px;
+}
+#about-page::-webkit-scrollbar{
+    width:4px;
+}
+#sideA{
+    width:100%;
+    height:40%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#sideB{
+    width:100%;
+    font-size:1rem;
+    height:60%;
+}
+#my-pic{
+    width:180px;
+    height:180px;
+    border-radius: 50%;
+    border:2px solid var(--backgroundcolor);
+}
+#about-content{
+    text-align: justify;
+}
+#abt{
+    font-weight:600;
+    font-size:1.5rem;
+    color:var(--backgroundcolor);
+    margin-bottom:10px;
 }
 #exit-button{
-    height: 25px;
-    width:25px;
+    height: 35px;
+    width:35px;
     background-color:var(--backgroundcolor);
     position: absolute;
-    border-radius:50%;
-    top:30px;
+    border-radius:10px;
+    top:10px;
     padding:3px;
     display: flex;
     justify-items: center;
     align-items: center;
-    right:30px;
+    right:10px;
 }
 #nav{
     width:100%;
@@ -147,7 +183,7 @@ nav .container{
     top:0px;
     position:sticky;
     border-bottom:1px solid var(--liner);
-    z-index:1000;
+    z-index:500;
     transition:.5s;
 }
 nav .container{
@@ -238,7 +274,7 @@ h3,#intro2,#intro3,#txt,#bout{
     display: flex;
     text-align: center;
     justify-content: center;
-    color:rgba(255, 255, 255, 0.5);
+    color:rgba(255, 255, 255, 0.737);
 }
 h2,h3{
     color: var(--lighter);
@@ -247,14 +283,14 @@ h1{
     color: var(--offblue)
 }
 #intro2{
-    font-size:2.5rem;
+    font-size:3rem;
 }
 #intro3{
-    font-size:1.5rem;
+    font-size:2rem;
+    font-weight:900;
 }
 #txt{
     margin-top: 30px;
-    padding-right:0px;
     line-height:1.5;
 }
 #bout{
@@ -344,8 +380,8 @@ h1{
     width: auto;
     display: flex;
     align-items: center;
-    font-weight:600;
-    font-size: .8rem;
+    font-weight:900;
+    font-size: .9rem;
     padding-left: 10px;
 }
 .github {
@@ -671,6 +707,9 @@ textarea {
         text-align: left;
         justify-content:flex-start;
     }
+    #txt{
+        padding-right:40px;
+    }
     #image-side {
         display: grid;
         grid-template-rows: repeat(10,1fr);
@@ -697,7 +736,8 @@ textarea {
     .padding {
         width: 100%;
         height: 100%;
-        color: var(--lighter);
+        color: var(--offblue);
+        font-weight:600;
         border-bottom: solid 1px var(--liner);
     }
     #text {
@@ -711,18 +751,25 @@ textarea {
     .item {
         width: 120px;
         height: 120px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
         padding: 25px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         position: relative;
         cursor: pointer;
         background-color: white;
+    }
+    .item img{
+        width:75%;
+        height:75%;
+        transition:.5s;
     }
     .item::after {
         content: " ";
         width: 100%;
         height: 100%;
         top: 0px;
-        font-weight: 600;
         left: 0px;
         display: flex;
         position: absolute;
@@ -730,7 +777,7 @@ textarea {
         align-items: center;
         justify-content: center;
         color: white;
-        background-color: #040c2774;
+        background-color: #040c27af;
         transition: .5s;
     }
     #item1{
@@ -752,8 +799,11 @@ textarea {
         content:"Runner game";
     }
     .item:hover::after{
-        height:30px;
+        height:50px;
         background-color: transparent;
+    }
+    .item:hover img{
+        transform: translateY(12px);
     }
     .card {
         border-radius: 5px;
@@ -836,13 +886,12 @@ textarea {
         font-weight: lighter;
     }
     h3{
-        font-size:1.5rem;
+        font-size:1rem;
         color:var(--lighter);
-        font-weight: lighter;
+        font-weight:900;
     }
     #txt{
         margin-top: 30px;
-        padding-right:0px;
         line-height:1.5;
     }
 }

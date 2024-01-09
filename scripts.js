@@ -43,7 +43,7 @@ const drag = (container) =>{
         const y = e.clientY
 
         tech.style.top =`${y - rect.top-150}px`;
-        tech.style.left =`${x - rect.left-55}px`;
+        tech.style.left =`${x - rect.left- 20}px`;
     }
 }
 
