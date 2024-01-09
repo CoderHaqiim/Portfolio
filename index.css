@@ -198,11 +198,11 @@ nav .container{
     height:60px;
 }
 #hamburger{
-    min-width:40px;
+    min-width:36px;
     min-height:40px;
-    max-width:40px;
+    max-width:36px;
     max-height:40px;
-    width:40px;
+    width:36px;
     height:40px;
     cursor:pointer;
     display:flex;
@@ -214,7 +214,7 @@ nav .container{
 }
 .bar{
 	width:38px;
-	height:5px;
+	height:4px;
 	border-radius:30px;
 	background-color: var(--action);
     transition:.2s;
