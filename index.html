@@ -231,7 +231,7 @@
                     <div id="title">
                         Leave a message
                     </div>
-                    <form id="info" netlify method="POST">
+                    <form id="info" netlify name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                         <input type="text" id="name" placeholder="name" name="name" required>
                         <input type="text" id="email" placeholder="e-mail" name="email" required>
                         <textarea placeholder="enter your message here" name="message"></textarea>
