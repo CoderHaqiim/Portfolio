@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    border: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --backgroundcolor: #040c27;
+    --liner: #879eeb3c;
+    --lighter: #9fb5fd;
+    --offblue: #cbd6fc;
+    --foot-color:#02091f;
+    --action: #05fcd3;
+    --bannertext1: 4.2rem;
+    --bannertext2: 2.2rem;
+    --bannertext3: 1.5rem;
+    --cardheader: 1.1rem;
+    --sectionhead: 1.5rem;
+    --cardradius: 10px;
+    --buttonradius: 4px;
+    --cardpadding: 20px 40px;
+    --btntext: 0.9#rem;
+    --smalltext: 0.7rem;
+    --purple: #4a0354;
+    scroll-behavior: smooth;
+}
+img{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100vh;
+    padding:50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+#sideA{
+    width:100%;
+    height:40%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#title{
+    width:100%;
+    height:200px;
+    position:absolute;
+    font-size:6rem;
+    font-weight:900;
+    line-height:.8;
+    right:30px;
+}
+#my-text{
+    background:linear-gradient(-325deg,var(--backgroundcolor),rgb(134, 2, 155));
+    background-clip:text;
+    color:transparent;
+}
+#sideB{
+    width:100%;
+    font-size:1rem;
+    height:60%;
+    position: relative;
+}
+#about-content{
+    text-align: justify;
+    margin-bottom:50px;
+    color: var(--backgroundcolor);
+    line-height: 1.5;
+    position: relative;
+}
+#line{
+    position: absolute;
+    height:7px;
+    right:-80px;
+    width:43%;
+    background:linear-gradient(-325deg,var(--backgroundcolor),rgb(134, 2, 155));;
+}
+#exit-button{
+    height: 35px;
+    width:35px;
+    position: absolute;
+    border-radius:10px;
+    top:10px;
+    padding:3px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    left:10px;
+}
