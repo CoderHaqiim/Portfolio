@@ -59,6 +59,8 @@ body{
 #my-text{
     background:linear-gradient(-325deg,var(--backgroundcolor),rgb(134, 2, 155));
     background-clip:text;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
     color:transparent;
 }
 #sideB{
