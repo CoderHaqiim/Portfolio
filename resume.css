@@ -93,3 +93,9 @@ img{
         box-shadow:2px 2px 5px 0px black;
     }
 }
+@media only screen and (max-width:350px){
+    #sheet{
+        width:calc(396.85px * 0.65);
+        height:calc(561.26px * 0.65);
+    }
+}
