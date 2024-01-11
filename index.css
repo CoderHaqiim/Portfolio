@@ -266,11 +266,8 @@ h3,#intro2,#intro3,#txt,#bout{
     justify-content: center;
     color:rgba(255, 255, 255, 0.737);
 }
-h2,h3{
+h1,h2,h3{
     color: var(--lighter);
-}
-h1{
-    color: var(--offblue)
 }
 #intro2{
     font-size:3rem;
@@ -316,11 +313,6 @@ h1{
     position: relative;
     height:250px;
     padding:0px !important; 
-}
-.card {
-    border-radius: 5px;
-    background-color: #ffffff0b;
-    box-shadow: 0px 0px 15px -5px black;
 }
 .img-container {
     width: 100%;
@@ -706,7 +698,7 @@ textarea {
         grid-template-columns: repeat(6,1fr);
         width: 50%;
         height: 100%;
-        gap: 30px;
+        gap: 20px;
         padding: 20px 0px;
     }
     #foot-content{
@@ -799,7 +791,7 @@ textarea {
         border-radius: 5px;
         padding: 12px;
         background-color: #ffffff0b;
-        box-shadow: 0px 0px 15px -5px black;
+        border:1px solid var(--liner)
     }
     .card-title{
         width:100%;
@@ -808,30 +800,31 @@ textarea {
     #skills {
         grid-row: 6/10;
         grid-column: 1/4;
+        min-width: 230px;
     }
     .skill-items {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
         align-items: center;
-        justify-content: center;
-        gap: 15px;
-        padding: 20px 15px;
+        justify-content:space-around;
+        gap:8px;
+        padding:8px 0px;
     }
     .skill-icon{
         width:80%;
         height:60%;
     }
     .item2 {
-        width: 50px;
-        height: 50px;
+        width:100%;
+        height: 100%;
+        min-width:62px;
         padding: 7px 7px 0px 7px;
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction:column;
         background-color: rgba(0, 0, 0, 0.221);
-        box-shadow: 0px 0px 3px -1px black;
     }
     #design {
         grid-row: 6/10;
@@ -859,11 +852,10 @@ textarea {
     }
     h1,h2,h3,p{
         width: 100%;
-        color:rgba(255, 255, 255, 0.5);
+        color:var(--lighter)
     }
     h1{
         font-size: 4rem;
-        color:var(--offblue);
         font-weight: bold;
     }
     #bout{
@@ -887,7 +879,7 @@ textarea {
 }
 @media only screen and (min-width:1000px){
     .container{
-        width:80%;
+        width:88%;
     }
     footer .container{
         width:90%;
@@ -902,7 +894,7 @@ textarea {
 }
 @media only screen and (min-width:1100px){
     .container{
-        width:70%;
+        width:80%;
     }
     #messenger{
         width:40%;
