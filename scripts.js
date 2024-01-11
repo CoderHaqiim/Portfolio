@@ -16,17 +16,8 @@ const optbar = document.querySelector("#optbar")
 const tech = document.querySelector("#technologies")
 const techUsed = document.querySelector("#tech-used")
 const imgContainer = document.querySelectorAll(".img-container")
+const lis = document.querySelectorAll("#opts li")
 let count = 0
-
-// aboutBtn.onclick = () =>{
-//     shadow.style.display = "flex"
-// }
-// abt.onclick = () =>{
-//     shadow.style.display = "flex"
-// }
-// exit.onclick = () =>{
-//     shadow.style.display = "none"
-// }
 
 const createItemsForId1 = (container) =>{
     const techsUsed = ['javascript','css','html']
@@ -119,8 +110,6 @@ onload = () =>{
     homeBtn.classList.add("clicked-nav")
 }
 
-
-
 //copied library
 
    function translate(obj,coordinate,distance){
@@ -147,12 +136,23 @@ onload = () =>{
     appear(optbar,"block")
     optbar.style.animationName = "down-slide";
     count = 1;
-    }else{
-        appear(midbar,"block");
-        topbar.style.transform = `translateY(0px) rotateZ(0deg)`;
-        botbar.style.transform = `translateY(0px) rotateZ(0deg)`;
-        optbar.style.animationName = "up-slide";
-        setTimeout(()=>{appear(optbar,"none")},150)
-        count = 0;
-    }
-})
+        }else{
+            hideBar()
+        }
+    })
+    function hideOptBar (){
+        lis.forEach(li=>{
+             li.onclick =() =>{
+                hideBar()
+             }
+        })
+     }
+     hideOptBar()
+     const hideBar = ()=>{
+                appear(midbar,"block");
+                topbar.style.transform = `translateY(0px) rotateZ(0deg)`;
+                botbar.style.transform = `translateY(0px) rotateZ(0deg)`;
+                optbar.style.animationName = "up-slide";
+                setTimeout(()=>{appear(optbar,"none")},150)
+                count = 0;
+     }

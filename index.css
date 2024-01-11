@@ -28,6 +28,7 @@
 }
 section,nav,footer{
     margin: auto;
+    position: relative;
 }
 body{
     width:100%;
@@ -37,6 +38,15 @@ body{
     var(--backgroundcolor),rgb(134, 2, 155)),var(--backgroundcolor);
     background-repeat: no-repeat;
     overflow-x: hidden;
+}
+#marker{
+    width:1px;
+    height:1px;
+    background-color: yellow;
+    position:absolute;
+    top:-70px;
+    left:20px;
+    visibility:hidden;
 }
 body::-webkit-scrollbar{
     width:4px;
@@ -64,6 +74,7 @@ section{
 img{
     width:100%;
     height: 100%;
+    pointer-events: none;
 }
 .btn{
     padding:10px 15px;
@@ -110,61 +121,11 @@ nav .container{
     font-weight: bold;
     color: #ffffffd9;
 }
-#about-page{
-    width:92%;
-    height:auto;
-    background-color: white;
-    border-radius:15px;
-    box-shadow:0px 0px 5px 1px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding:15px;
-}
-#about-page::-webkit-scrollbar{
-    width:4px;
-}
-#sideA{
-    width:100%;
-    height:40%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-#sideB{
-    width:100%;
-    font-size:1rem;
-    height:60%;
-}
-#my-pic{
-    width:180px;
-    height:180px;
-    margin:25px 0px;
-    border-radius: 50%;
-    border:2px solid var(--backgroundcolor);
-}
-#about-content{
-    text-align: justify;
-    margin-bottom:25px;
-}
 #abt{
     font-weight:600;
     font-size:1.5rem;
     color:var(--backgroundcolor);
     margin-bottom:10px;
-}
-#exit-button{
-    height: 35px;
-    width:35px;
-    background-color:var(--backgroundcolor);
-    position: absolute;
-    border-radius:10px;
-    top:10px;
-    padding:3px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    right:10px;
 }
 #nav{
     width:100%;
@@ -312,6 +273,16 @@ h1,h2,h3{
     justify-content:space-between;
     gap:60px;
 }
+.padding{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.seemore{
+    font-size:0.6rem;
+    color:var(--action);
+    cursor:pointer;
+}
 .item3 {
     position: relative;
     height:250px;
@@ -401,6 +372,7 @@ h1,h2,h3{
     justify-content: center;
     z-index:10;
     color:var(--lighter);
+    border:1px solid var(--liner);
 }
 #tech-title{
     font-weight:600;
