@@ -17,6 +17,8 @@ const tech = document.querySelector("#technologies")
 const techUsed = document.querySelector("#tech-used")
 const imgContainer = document.querySelectorAll(".img-container")
 const lis = document.querySelectorAll("#opts li")
+const text = document.querySelector("#text")
+const imageside = document.querySelector("#image-side")
 let count = 0
 
 const createItemsForId1 = (container) =>{
@@ -25,6 +27,10 @@ const createItemsForId1 = (container) =>{
         techUsed.innerHTML +=`<p>${item}</p>`
     }
     drag(container)
+}
+
+const slide = () => {
+    
 }
 
 const drag = (container) =>{
