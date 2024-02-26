@@ -756,6 +756,8 @@ textarea {
         color: white;
         background-color: #040c27af;
         transition: .5s;
+        text-wrap:wrap;
+        text-align: center;
     }
     #item1{
         background-color: #035f03;
@@ -770,7 +772,7 @@ textarea {
         content:"Music player";
     }
     #item2::after{
-        content:"China store";
+        content:"e-commerce-page";
     }
     #item3::after{
         content:"Runner game";
