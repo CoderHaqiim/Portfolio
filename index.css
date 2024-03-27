@@ -238,7 +238,7 @@ h1,h2,h3{
 }
 #intro3{
     font-size:1.7rem;
-    font-weight:900;
+    font-weight:600;
 }
 #txt{
     margin-top: 30px;
@@ -775,7 +775,7 @@ textarea {
         content:"e-commerce-page";
     }
     #item3::after{
-        content:"Runner game";
+        content:"easyshop";
     }
     .item:hover::after{
         height:50px;
@@ -867,7 +867,7 @@ textarea {
     h3{
         font-size:1rem;
         color:var(--lighter);
-        font-weight:900;
+        font-weight:600;
     }
     #txt{
         margin-top: 30px;
