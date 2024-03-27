@@ -45,21 +45,21 @@ const drag = (container) =>{
 }
 
 const createItemsForId2 = (container) =>{
-    const techsUsed = ['react','tailwind','swiper']
+    const techsUsed = ['javascript','html','css']
     for (item of techsUsed){
         techUsed.innerHTML +=`<p>${item}</p>`
     }
     drag(container)
 }
 const createItemsForId3 = (container) =>{
-    const techsUsed = ['react','javascript','css','html']
+    const techsUsed = ['react','tailwind','css','swiperjs']
     for (item of techsUsed){
         techUsed.innerHTML +=`<p>${item}</p>`
     }
     drag(container)
 }
 const createItemsForId4 = (container) =>{
-    const techsUsed = ['react','tailwind','swiper']
+    const techsUsed = [""]
     for (item of techsUsed){
         techUsed.innerHTML +=`<p>${item}</p>`
     }
